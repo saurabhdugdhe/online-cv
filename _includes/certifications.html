@@ -19,16 +19,16 @@
   {% for certificate in certifications.certification %}
     <div class="item">
 
-      <h3 class="certificate-title">
+      <h4 class="certificate-title">
         {% if certificate.link %}
         <a href="{{ certificate.link }}" target="_blank">{{ certificate.title }}</a>
         {% else %}
         {{ certificate.title }}
         {% endif %}
-      </h3>
+      </h4>
 
       {% if certificate.issuer %}
-      - <div class="certificate-issuer">{{ certificate.issuer }}</div>
+      <div class="certificate-issuer">Issuer: {{ certificate.issuer }}</div>
       {% endif %}
 
     </div><!--//item-->
