@@ -17,19 +17,29 @@
   {% endif %}
 
   {% for certificate in certifications.certification %}
-    <div class="upper-row">
+  <div class="item">
 
-      <h4 class="certificate-title">
-        {% if certificate.link %}
-        <a href="{{ certificate.link }}" target="_blank">{{ certificate.title }}</a>
-        {% else %}
-        {{ certificate.title }}
+    <div class="meta">
+
+        <div class="upper-row">
+            <h4 class="certificate-title">
+                {% if certificate.link %}
+                <a href="{{ certificate.link }}" target="_blank">{{ certificate.title }}</a>
+                {% else %}
+                {{ certificate.title }}
+                {% endif %}
+            </h4>
+        </div><!--//upper-row-->
+
+        {% if certificate.issuer %}
+        <div class="certificate-issuer">
+            Issuer: {{ certificate.issuer }}
+        </div><!--//certificate-issuer-->
         {% endif %}
-      </h4>
-    </div>
-      {% if certificate.issuer %}
-      <div class="certificate-issuer">Issuer: {{ certificate.issuer }}</div>
-      {% endif %}
+    
+    </div> <!--//Meta-->
+
+   </div> <!--//Item-->
 
   {% endfor %}
 
