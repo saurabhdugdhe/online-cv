@@ -9,6 +9,7 @@ sidebar:
     # Profile information
     name: Saurabh Dugdhe
     tagline: Software Developer
+    location: Pune, Maharashtra
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -122,6 +123,18 @@ publications:
       #   authors: Edgar T. Irons
       #   conference: "Comm. ACM 4 (1961), 51–55"
 
+certifications:
+    title: Certifications and Courses
+    intro: |
+      List of certifications.
+    
+    certification:
+      - title: Certified SAFe 5 Practitioner, 2021
+        issuer: Scaled Agile
+
+      - title: MEC Design and Analysis of Algorithms, 2015
+        issuer: Microsoft Research
+
 skills:
     title: Skills &amp; Proficiency
 
@@ -143,6 +156,9 @@ skills:
 
       - name: Unit Testing
         level: 70%
+
+      - name: Python
+        level: 30%
 
 #footer: >
 #    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
