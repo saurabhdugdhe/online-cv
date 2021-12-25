@@ -5,7 +5,7 @@
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
       <i class="fas fa-circle fa-stack-2x"></i>
-      <i class="fas fa-archive fa-stack-1x fa-inverse"></i>
+      <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
     </span>
     {{ certifications.title }}
   </h2>
@@ -19,16 +19,16 @@
   {% for certificate in certifications.certification %}
     <div class="item">
 
-      <span class="certificate-title">
+      <h3 class="certificate-title">
         {% if certificate.link %}
         <a href="{{ certificate.link }}" target="_blank">{{ certificate.title }}</a>
         {% else %}
         {{ certificate.title }}
         {% endif %}
-      </span>
+      </h3>
 
       {% if certificate.issuer %}
-      - <span class="certificate-issuer">{{ certificate.issuer }}</span>
+      - <div class="certificate-issuer">{{ certificate.issuer }}</div>
       {% endif %}
 
     </div><!--//item-->
